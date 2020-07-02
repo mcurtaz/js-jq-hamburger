@@ -1,4 +1,4 @@
-// soluzione 1
+// ----------- SOLUZIONE 1 -------------
 
 // $(".header-right > a").click(
 //   function () {
@@ -13,16 +13,30 @@
 // );
 
 
-// soluzione 2
+// ------------- SOLUZIONE 2 -----------
+//
+// $(".header-right > a").click(
+//   function () {
+//     $(".hamburger-menu").show();
+//   }
+// );
+//
+// $(".close").click(
+//   function (){
+//     $(".hamburger-menu").hide();
+//   }
+// );
+
+// ------------- SOLUZIONE 3 ------------
 
 $(".header-right > a").click(
-  function () {
-    $(".hamburger-menu").show();
+  function (){
+    $(".hamburger-menu").css("display", "block");
   }
 );
 
 $(".close").click(
   function (){
-    $(".hamburger-menu").hide();
+    $(".hamburger-menu").css("display", "none");
   }
 );
